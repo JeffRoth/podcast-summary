@@ -2,17 +2,18 @@ import streamlit as st
 import base64
 
 # Set a background image
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-image: url('dophin-image.jpg');
-        background-size: cover;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
+# st.markdown(
+#     """
+#     <style>
+#     .stApp {
+#         background-image: url('dolphin-image.jpg');
+#         background-size: cover;
+#     }
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 # def get_base64(bin_file):
 #     with open(bin_file, 'rb') as f:
@@ -31,9 +32,11 @@ st.markdown(
 #     ''' % bin_str
 #     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-# set_background('dophin-image.png')
+# set_background('dolphin-image.png')
+
+st.image('owlcast-image.png')
 
 
 # Title and introduction
-st.title("DolphinPod")
-st.write("Dive into concise podcast summaries with DolphinPod. Scroll down to see more content.")
+st.title("The OwlCast")
+st.write("OwlCast makes summarizing podcasts a hoot. Scroll down to see more content.")

@@ -4,7 +4,11 @@ import json
 import os
 
 def main():
-    st.title("Newsletter Dashboard")
+    
+    st.image('owlcast-image.png')
+    
+    st.title("The OwlCast")
+    st.write("OwlCast makes summarizing podcasts a hoot. Scroll down to see more content.")
 
     available_podcast_info = create_dict_from_json_files('.')
 
@@ -119,7 +123,7 @@ def create_dict_from_json_files(folder_path):
 
 def process_podcast_info(url):
     f = modal.Function.lookup("corise-podcast-project", "process_podcast")
-    output = f.call(url, '/content/podcast/')
+    output = f.call(url, '')
     return output
 
 if __name__ == '__main__':
